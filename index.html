@@ -1,0 +1,112 @@
+<html>
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/house.jpg" data-color="lightblue" alt="First Image">
+        <div class="carousel-caption d-md-block">
+          <h5>Front view of the house</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/baldhead.jpg" data-color="firebrick" alt="Second Image">
+        <div class="carousel-caption d-md-block">
+          <h5>Inside of the living room</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/house3.jpg" data-color="violet" alt="Third Image">
+        <div class="carousel-caption d-md-block">
+          <h5>View from the porch</h5>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
+  </div>
+  <div class="text-area">
+      <h1><strong>Cape Watch Cottage</strong></h1>
+      <h2>Bald Head Island, North Carolina</h2>
+    <div class="bottom">
+      <div class="links">
+      <button href="#aboutModal" class="btn-sm btn-primary" data-toggle="modal">About</button>
+      <a target="_blank" href="https://www.baldheadisland.com/vacation/rentals/cape-watch-cottage"><button class="btn btn-info">Reserve</button></a>
+      <button href="#contactModal" class="btn-sm btn-primary" data-toggle="modal">Contact</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- about module -->
+  <div id="aboutModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">About</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h3>About Bald Head Island</h3>
+                  <p>Bald Head Island is one of North Carolina's most isolated and private barrier islands, yet easy to reach from Interstates 40 and 95. Bald Head is capped by the infamous Cape Fear, one of the three great capes of the mid-Atlantic, and boasts 14 miles of pristine beaches. An underwater labyrinth of shoals and sandbars extending for many miles into the Atlantic Ocean, rich in the history of the South, the island is also the home of Old Baldy, the oldest continuously operating lighthouse in North Carolina erected in 1817 to guide vessels up the river.</p>
+                  <h3>About the Cottage</h3>
+                  <p>This comfortable, spacious ocean front home is sited amidst live oaks, mature cedars and wax myrtles and is located just steps away from a wide beach of powdery sand. A private courtyard with outdoor ping pong table, horse shoe pit and large charcoal barbeque invites fun for the whole family, while wrap around porches, a hammock and sun decks provide secluded refuge for those seeking quiet and relaxation. The views of South Beach, the Shoals of Cape Fear and the blue green waters of the Atlantic beyond are truly remarkable.<br><br>Cape Watch Cottage was designed and built to provide families and friends with a roomy, fully equipped and luxurious vacation opportunity, sited on a uniquely beautiful barrier island on North Carolina's southeastern coast. With four bedrooms, a den with a sleep sofa and four full baths, a gourmet kitchen, ample dining and living space on the inside, Cape Watch also boasts an oceanfront screened porch, wide sundeck and covered wrap-around porches galore. The house will comfortably accommodate a group or family of up to ten persons. For the competitive members of the group, an all weather ping pong table sits in the middle of the courtyard, and a horseshoe pit located in the sand on the east side of the main cottage both attract lively games any time of day.<br><br>The first floor is equipped with a master suite, a den, dining room with seating for 10 and a breakfast bar for spreading out. The large family room with wet bar is a great gathering place, and a fully equipped gourmet kitchen makes meals a breeze. The second floor opens up to another wet bar and extra fridge, and an unsurpassed view of the Atlantic Ocean and the shoals of Cape Fear from a seaside sitting and game room, screened porch and sundeck.<br><br>The second floor also has a master suite and two additional bedrooms and the laundry room with oversized front-loading washer and dryer.<br><br>For rainy days, there are ample board games and puzzles, Direct TV servicing 3 televisions, a music system and enough covered porch to keep everyone dry and cool.<br><br>Come to Bald Head Island and stay at Cape Watch Cottage. Plan to slow down a bit, as we like to say. Arrive by passenger ferry, travel by electric golf cart, and experience a truly unique vacation with close family and friends. We are certain you'll not be disappointed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact module -->
+    <div id="contactModal" class="modal fade" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Contact</h3>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Bob White - <a href="mailto:bwhite@landmarkcre.com">bwhite@landmarkcre.com</a></p>
+                    <p>Holly White - <a href="mailto:hollywhite@verizon.net">hollywhite@verizon.net</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  <script type="text/javascript">
+      var $item = $('.carousel-item');
+      var $wHeight = $(window).height();
+      $item.eq(0).addClass('active');
+      $item.height($wHeight);
+      $item.addClass('full-screen');
+
+      $('.carousel img').each(function() {
+        var $src = $(this).attr('src');
+        var $color = $(this).attr('data-color');
+        $(this).parent().css({
+          'background-image' : 'url(' + $src + ')',
+        });
+        $(this).remove();
+      });
+
+      $(window).on('resize', function (){
+        $wHeight = $(window).height();
+        $item.height($wHeight);
+      });
+
+      $('.carousel').carousel({
+        interval: 4500,
+        pause: "false"
+      });
+
+    </script>
+</body>
+</html>
