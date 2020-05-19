@@ -55,4 +55,8 @@ h2 {
   h2 {
     font-size: 2rem;
   }
+  .text-area {
+    height: 800px;
+    margin-top: -400px;
+  }
 }
